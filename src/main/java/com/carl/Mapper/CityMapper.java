@@ -9,7 +9,7 @@ public interface CityMapper {
 
     public List<City> searchByName(String cityName);
 
-    public  List<City> list();
+    public List<City> list();
 
     public int count();
 }

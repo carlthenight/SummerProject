@@ -12,6 +12,6 @@ public class WeatherMainImpl implements WeatherMainService {
     WeatherMainMapper weatherMainMapper;
 
     public WeatherMain get(String id){
-        return weatherMainMapper.get(id);
+        return weatherMainMapper.getById(id);
     }
 }

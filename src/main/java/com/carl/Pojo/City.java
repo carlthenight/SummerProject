@@ -3,6 +3,7 @@ package com.carl.Pojo;
 public class City {
     private String id;
     private String cityName;
+    private String province;
 
     public String getId() {
         return id;
@@ -18,6 +19,14 @@ public class City {
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
     }
 
     @Override

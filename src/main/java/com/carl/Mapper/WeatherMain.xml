@@ -5,7 +5,8 @@
 
 <mapper namespace="com.carl.Mapper.WeatherMainMapper">
 
-    <select id="get" parameterType="string" resultType="WeatherMain">
-        SELECT * FROM weatherMain WHERE id = #{id}
+    <select id="getById" parameterType="string" resultType="WeatherMain">
+        SELECT * FROM weathermain WHERE id = #{id}
       </select>
+
 </mapper>

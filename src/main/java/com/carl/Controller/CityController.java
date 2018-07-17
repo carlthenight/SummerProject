@@ -31,7 +31,7 @@ public class CityController {
     @ResponseBody
     public List<City> lisCity(HttpServletRequest request, HttpServletResponse response){
         response.setHeader("Access-Control-Allow-Origin","*");
-      return cityService.list();
+       return cityService.list();
     }
 
     @RequestMapping(value="/searchCity",method = {RequestMethod.GET})
