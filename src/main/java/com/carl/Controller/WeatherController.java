@@ -1,10 +1,7 @@
 package com.carl.Controller;
 
 import com.carl.Mapper.DivisionTimeWeatherMapper;
-import com.carl.Pojo.Aqi;
-import com.carl.Pojo.City;
-import com.carl.Pojo.DivisionTimeWeather;
-import com.carl.Pojo.WeatherMain;
+import com.carl.Pojo.*;
 import com.carl.Service.AqiService;
 import com.carl.Service.CityService;
 import com.carl.Service.DivisionTimeWeatherService;
@@ -110,7 +107,16 @@ public class WeatherController {
 
     @RequestMapping(value = "/getSevenDays")
     @ResponseBody
-    public
+    Map<String,Map<String,List<SevenDaysWeather>>> getSevenDaysWeatherByName(HttpServletRequest request, HttpServletResponse response, String cityName) throws UnsupportedEncodingException{
+        request.setCharacterEncoding("UTF-8");
+        response.setHeader("Access-Control-Allow-Origin","*");
+
+
+        Map<String,Map<String,List<SevenDaysWeather>>> map1 = new HashMap<>();
+        Map<String,List<DivisionTimeWeather>> map2 = new HashMap<>();
+
+        return map1;
+    }
 
 
 
