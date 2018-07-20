@@ -15,6 +15,6 @@
         weather_day AS weather_day,
         weather_night AS weather_night,
         numday AS date
-        FROM  sevendayweather WHERE id = #{id} AND  numday BETWEEN #{start} and #{end}
+        FROM  sevendayweather WHERE id = #{id} AND  numday BETWEEN #{start} and #{end} order by date
         </select>
 </mapper>
