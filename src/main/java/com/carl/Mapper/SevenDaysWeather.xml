@@ -7,11 +7,14 @@
 
     <select id="getById" parameterType="string" resultType="SevenDaysWeather">
         SELECT
-        Weather_time AS weather_time,
-        Weather AS weather,
-        Temperature AS temperature
-        FROM   weathertimes
-        WHERE cityName= #{cityName}  AND  Weather_time BETWEEN #{start} and #{end}
-        LIMIT 26
+        id AS id,
+        TemperatureHigh AS temperature_High,
+        TemperatureLow AS temperature_Low,
+        Wind AS wind_direction,
+        WindPower AS wind_power,
+        weather_day AS weather_day,
+        weather_night AS weather_night,
+        numday AS date
+        FROM  sevendayweather WHERE id = #{id} AND  numday BETWEEN #{start} and #{end}
         </select>
 </mapper>

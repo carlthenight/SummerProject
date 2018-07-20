@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="WeatherSystem">
+    <output-path>$PROJECT_DIR$/out/artifacts/WeatherSystem</output-path>
+    <root id="archive" name="WeatherSpring_war.war">
+      <element id="artifact" artifact-name="WeatherSpring:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
+    </root>
+  </artifact>
+</component>

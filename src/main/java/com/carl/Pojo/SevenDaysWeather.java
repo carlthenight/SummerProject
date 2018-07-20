@@ -4,7 +4,7 @@ public class SevenDaysWeather {
 
     private String id;
     private String temperature_High;
-    private String temperatrue_Low;
+    private String temperature_Low;
     private String date;
     private String wind_direction;
     private String wind_power;
@@ -27,14 +27,13 @@ public class SevenDaysWeather {
         this.temperature_High = temperature_High;
     }
 
-    public String getTemperatrue_Low() {
-        return temperatrue_Low;
+    public void setTemperature_Low(String temperature_Low) {
+        this.temperature_Low = temperature_Low;
     }
 
-    public void setTemperatrue_Low(String temperatrue_Low) {
-        this.temperatrue_Low = temperatrue_Low;
+    public String getTemperature_Low() {
+        return temperature_Low;
     }
-
     public String getDate() {
         return date;
     }
@@ -80,7 +79,7 @@ public class SevenDaysWeather {
         return "SevenDaysWeather{" +
                 "id='" + id + '\'' +
                 ", temperature_High='" + temperature_High + '\'' +
-                ", temperatrue_Low='" + temperatrue_Low + '\'' +
+                ", temperature_Low='" + temperature_Low + '\'' +
                 ", date='" + date + '\'' +
                 ", wind_direction='" + wind_direction + '\'' +
                 ", wind_power='" + wind_power + '\'' +

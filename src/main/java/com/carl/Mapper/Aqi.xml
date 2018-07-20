@@ -6,7 +6,7 @@
 <mapper namespace="com.carl.Mapper.AqiMapper">
 
     <select id="getAqiById" parameterType="string" resultType="Aqi">
-        SELECT * FROM   airinfo  WHERE id= #{id}
+        SELECT * FROM   airinfo  WHERE id= #{id} ORDER BY TTime desc LIMIT 1
         </select>
 
 </mapper>
